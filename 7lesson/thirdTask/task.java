@@ -13,26 +13,26 @@ public class ThirdThree {
         } catch (IOException e) {
             e.printStackTrace();
         }
-//        int max = 0;
-//        String maxValue = null;
-//        int cur;
-//        if(value != null) {
-//            for (int i = 0; i < value.length(); i++) {
-//                for (int j = 0; j < value.length(); j++) {
-//                    if (j > i && value.charAt(i) == value.charAt(j)) {
-//                        cur = value.substring(i, j + 1).length();
-//                        if (cur > max) {
-//                            max = cur;
-//                            maxValue = value.substring(i, j + 1);
-//                        }
-//                    }
-//                }
-//            }
-//        }
-//        if(maxValue != null) {
-//            value = value.replace(maxValue, "");
-//        }
-//        System.out.println(value);
+        int max = 0;
+        String maxValue = null;
+        int cur;
+        if(value != null) {
+            for (int i = 0; i < value.length(); i++) {
+                for (int j = 0; j < value.length(); j++) {
+                  if (j > i && value.charAt(i) == value.charAt(j)) {
+                        cur = value.substring(i, j + 1).length();
+                        if (cur > max) {
+                            max = cur;
+                            maxValue = value.substring(i, j + 1);
+                        }
+                    }
+                }
+            }
+        }
+        if(maxValue != null) {
+            value = value.replace(maxValue, "");
+        }
+        System.out.println(value);
 
         //--------------------------------------------4----------------------------------
         Matcher m = Pattern.compile("(.)\\1+").matcher(value);
