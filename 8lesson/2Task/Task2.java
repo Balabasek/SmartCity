@@ -4,28 +4,26 @@ import java.util.LinkedList;
 public class Task2 {
     public static void main(String[] args) {
         //------------------------------------------------1--------------------------------------------//
-//        ArrayList<Person> people = new ArrayList<>();
-//        LinkedList<Person> people1 = new LinkedList<>();
-//
-//        for (int i = 0; i < 10; i ++){
-//            people.add(new Person());
-//            people1.add(new Person());
-//        }
-//        while (people.size() != 2){
-//            for (int i = 1; i < people.size(); i++){
-//                people.remove(i);
-//            }
-//        }
-//        people.remove(1);
-//        System.out.println("rr");
-//
-//        while (people1.size() != 2){
-//            for (int i = 1; i < people1.size(); i++){
-//                people1.remove(i);
-//            }
-//        }
-//        people1.remove(1);
-//        System.out.println("rr");
+        ArrayList<Person> people = new ArrayList<>();
+        LinkedList<Person> people1 = new LinkedList<>();
+
+        for (int i = 0; i < 10; i ++){
+            people.add(new Person());
+            people1.add(new Person());
+        }
+        while (people.size() != 2){
+            for (int i = 1; i < people.size(); i++){
+                people.remove(i);
+            }
+        }
+        people.remove(1);
+
+        while (people1.size() != 2){
+            for (int i = 1; i < people1.size(); i++){
+                people1.remove(i);
+            }
+        }
+        people1.remove(1);
         //----------------------------------------------2------------------------------------------
 
 
